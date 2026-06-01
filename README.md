@@ -26,7 +26,21 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main()
+{
+    printf("Integer literal: %d\n", 10);
+    printf("Float literal: %f\n", 3.14);
+    printf("Character literal: %c\n", 'A');
+    printf("String literal: %s\n", "Hello C");
+
+    return 0;
+}
+```
 # Output:
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +71,22 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include <stdio.h>
+#define PI 3.14159
+
+int main()
+{
+    const int DAYS = 7;
+
+    printf("Value of PI: %.5f\n", PI);
+    printf("Number of DAYS: %d\n", DAYS);
+
+    return 0;
+}
+```
 # Output:
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,7 +110,26 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main()
+{
+    int a = 10;
+    float b = 5.5f;
+    double c = 123.456;
+    char d = 'C';
+
+    printf("Integer value: %d\n", a);
+    printf("Float value: %.2f\n", b);
+    printf("Double value: %.3lf\n", c);
+    printf("Character value: %c\n", d);
+
+    return 0;
+}
+```
 # Output:
+
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -120,7 +168,36 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+int main()
+{
+    int a, b;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("\nArithmetic Operations:\n");
+    printf("Addition: %d\n", a + b);
+    printf("Subtraction: %d\n", a - b);
+    printf("Multiplication: %d\n", a * b);
+    printf("Division: %d\n", a / b);
+    printf("Remainder: %d\n", a % b);
+
+    printf("\nBitwise Operations:\n");
+    printf("AND: %d\n", a & b);
+    printf("OR: %d\n", a | b);
+    printf("XOR: %d\n", a ^ b);
+    printf("Left Shift: %d\n", a << 1);
+    printf("Right Shift: %d\n", a >> 1);
+    printf("NOT of a: %d\n", ~a);
+    printf("NOT of b: %d\n", ~b);
+
+    return 0;
+}
+```
 # Output:
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +242,28 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+int main()
+{
+    char ch;
+
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    (ch >= '0' && ch <= '9') ? 
+        printf("Digit") :
+    ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+        ((ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+          ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') ?
+            printf("Vowel") : printf("Consonant")) :
+        printf("Special Symbol");
+
+    return 0;
+}
+```
 # Output:
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
